@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    height: 80px;
+}
+
+nav > img{
+    height: inherit;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    height: inherit;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0rem 2rem;
+}
+nav > ul > li:hover{
+    background: rgb(40,40,40);
+    cursor: pointer;
+}
