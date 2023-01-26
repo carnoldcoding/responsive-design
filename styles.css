@@ -4,31 +4,112 @@
     outline: 0;
 }
 
-body{
-    text-align: center;
-}
-
-h1{
-    display: inline-block;
+article{
+    border: 5px solid black;
+    margin: 50px 450px;
     position: relative;
 }
 
-h1::before{
-    content: '';
+article::before{
+    content: 'sale';
     position: absolute;
-    height: 3px;
-    width: 100%;
-    transform: scaleX(0);
-    bottom: 0px;
+    top: -20px;
+    left: -40px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    background: red;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+
+}
+
+h1{
+    background: lightgrey;
+    text-transform: uppercase;
+    padding: 1.25rem 0;
+    text-align: center;
+}
+
+img{
+    height: 300px;
+    width: 250px;
+}
+
+span{
+    color: grey;
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+a{
+    color: black;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.color{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+}
+
+.color:nth-child(1){
+    background: orange;
+}
+
+.color:nth-child(2){
+    background: pink;
+}
+
+.color:nth-child(3){
+    background: yellow;
+}
+
+.color:nth-child(4){
     background: black;
-    transition: all .3s ease;
-    transform-origin: left;
 }
 
-h1:hover{
+.color:nth-child(5){
+    background: magenta;
+}
+
+.color:nth-child(6){
+    background: blue;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+ul{
+    margin-left: 20px;
+}
+li{
+    margin: 15px 0;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+    color: white;
+    background: black;
+    border: unset;
+    border-top: 2px solid black;
+    transition: all .2s ease;
+}
+
+button:hover{
     cursor: pointer;
-}
-
-h1:hover::before{
-    transform: scaleX(1);
+    background: white;
+    color: black;
 }
